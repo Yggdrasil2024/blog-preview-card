@@ -117,7 +117,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: calc(var(--spacing) * 1);
+  gap: calc(var(--spacing) * 0.8);
 }
 
 .card-copy {
@@ -125,7 +125,7 @@ body {
 }
 
 .card-info-area img {
-  width: 40px;
+  width: 35px;
 }
 
 .author-name {
