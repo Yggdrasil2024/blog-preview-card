@@ -60,6 +60,17 @@ body {
   border-radius: 16px;
   padding: calc(var(--spacing) * 1.16);
   box-shadow: 8px 8px 0px var(--gray-950);
+  transition: 0.2s all;
+}
+
+.card:hover {
+  width: 350px;
+  background-color: white;
+  border: 2px solid var(--gray-950);
+  border-radius: 16px;
+  padding: calc(var(--spacing) * 1.16);
+  box-shadow: 10px 10px 0px var(--gray-950);
+  transform: translateY(-2px);
 }
 
 /* --- card img --- */
