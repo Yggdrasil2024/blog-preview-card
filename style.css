@@ -3,66 +3,73 @@
 
 /* ---- css variables ---- */
 :root {
-  /* --- colors --- */
-  --yellow: hsl(47, 88%, 63%);
-  --white: hsl(0, 0%, 100%);
-  --gray-500: hsl(0, 0%, 42%);
-  --gray-950: hsl(0, 0%, 7%);
+    /* --- colors --- */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
 
-  /* --- font size --- */
-  --text-md: 1rem;
+    /* --- font size --- */
+    --text-md: 1rem;
 
-  /* --- font weight --- */
-  --wg-md: 500;
-  --wg-lg: 800;
+    /* --- font weight --- */
+    --wg-md: 500;
+    --wg-lg: 800;
 
-  /* --- space --- */
-  --spacing: 1rem;
+    /* --- space --- */
+    --spacing: 1rem;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-  display: inline-block;
-  width: 100%;
+    display: inline-block;
+    width: 100%;
 }
 
 h1,
 h2 {
-  font-family: "Figtree", sans-serif;
-  font-weight: var(--wg-lg);
-  color: var(--gray-950);
+    font-family: "Figtree", sans-serif;
+    font-weight: var(--wg-lg);
+    color: var(--gray-950);
+    transition: all 0.5s;
+}
+
+h1:hover {
+    color: var(--yellow);
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--yellow);
-  font-size: var(--text-md);
-  color: var(--gray-500);
-  font-weight: var(--wg-md);
-  font-family: "Figtree", sans-serif;
+    min-height: 100vh;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    font-size: var(--text-md);
+    color: var(--gray-500);
+    font-weight: var(--wg-md);
+    font-family: "Figtree", sans-serif;
 }
 
 /* --- card frame --- */
 .card {
-  width: 350px;
-  background-color: white;
-  border: 2px solid var(--gray-950);
-  border-radius: 16px;
-  padding: calc(var(--spacing) * 1.16);
-  box-shadow: 8px 8px 0px var(--gray-950);
-  transition: 0.2s all;
+    width: 350px;
+    background-color: white;
+    border: 2px solid var(--gray-950);
+    border-radius: 16px;
+    padding: calc(var(--spacing) * 1.16);
+    box-shadow: 8px 8px 0px var(--gray-950);
+    transition: 0.2s all;
 }
 
+/*
 .card:hover {
   width: 350px;
   background-color: white;
@@ -71,64 +78,64 @@ body {
   padding: calc(var(--spacing) * 1.16);
   box-shadow: 10px 10px 0px var(--gray-950);
   transform: translateY(-2px);
-}
+}*/
 
 /* --- card img --- */
 .card-img {
-  margin-bottom: calc(var(--spacing) * 1.16);
-  border-radius: 12px;
-  overflow: hidden;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-bottom: calc(var(--spacing) * 1.16);
+    border-radius: 12px;
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-img img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  transform: scale(1.2);
-  transition: 0.2s;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 .card-img:hover img {
-  transform: scale(1.22);
+    transform: scale(1.22);
 }
 
 /* --- card body --- */
 
 .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: calc(var(--spacing) * 1.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--spacing) * 1.1);
 }
 
 .card-badge {
-  font-weight: var(--wg-lg);
-  font-size: calc(var(--text-md) * 0.65);
-  padding: calc(var(--spacing) / 2);
-  color: var(--gray-950);
-  background-color: var(--yellow);
-  border-radius: 4px;
+    font-weight: var(--wg-lg);
+    font-size: calc(var(--text-md) * 0.65);
+    padding: calc(var(--spacing) / 2);
+    color: var(--gray-950);
+    background-color: var(--yellow);
+    border-radius: 4px;
 }
 
 .card-badge + span {
-  color: var(--gray-950);
-  font-size: 0.89rem;
+    color: var(--gray-950);
+    font-size: 0.89rem;
 }
 
 .card-title {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .card-info-area {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: calc(var(--spacing) * 0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: calc(var(--spacing) * 0.8);
 }
 
 .card-copy {
@@ -136,10 +143,9 @@ body {
 }
 
 .card-info-area img {
-  width: 35px;
+    width: 35px;
 }
 
 .author-name {
     font-size: 1rem;
 }
-
